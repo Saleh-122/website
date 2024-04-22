@@ -5,3 +5,9 @@ def index(request):
 
 def aboutme(request):
     return render(request, 'bookmodule/aboutme.html')
+
+def signIn(request):
+    return render(request, 'bookmodule/signIn.html')
+
+def signUp(request):
+    return render(request, 'bookmodule/signUp.html')
