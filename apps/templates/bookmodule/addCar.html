@@ -1,0 +1,31 @@
+<!-- Basic HTML Structure -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Car</title>
+</head>
+<body>
+
+    <form method = "POST">
+        {%csrf_token%}
+        <h1>Add Car</h1>
+        <label for="select">select car brand:</label><br>
+        <select id="select" name="select">
+            <option value="TAYOTA">TAYOTA</option>
+            <option value="NISSAN">NISSAN</option>
+            <option value="BMW">BMW</option>
+            <option value="MERCEDES">MERCEDES</option>
+           
+            </select><br>
+        <label for="name">Car name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price" required><br>
+        <button type="submit" class="signInbtn">Add</button>
+      </form>
+      <div class="container signin">
+        <p>Want to go back to main page? <a href="/index">Home</a>.</p>
+      </div>
+</body>
+</html>
